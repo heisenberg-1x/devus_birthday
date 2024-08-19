@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe4e1;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.birthday-message h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.birthday-message p {
+    font-size: 1.5rem;
+    color: #ff4500;
+    animation: fadeIn 3s ease-in-out 1s;
+}
+
+.gift-icon img {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+#video-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#birthday-video {
+    width: 100%;
+    height: auto;
+}
+
+#close-video {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
